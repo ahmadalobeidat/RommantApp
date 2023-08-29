@@ -7,7 +7,10 @@ public class RommanyDBContext : DbContext
     public RommanyDBContext(DbContextOptions options) : base(options)
     {
     }
-    DbSet<AboutUs> AboutUs{ get; set; }
-    DbSet<Achievement> Achievements{ get; set; }
-    DbSet<Product> Products{ get; set; }
+   public  DbSet<AboutUs> AboutUs{ get; set; }
+   public  DbSet<Achievement> Achievements{ get; set; }
+   public  DbSet<Product> Products{ get; set; }
+   public DbSet<User> Users{ get; set; }
+   public DbSet<UserLogin> UserLogin{ get; set; }
+
 }

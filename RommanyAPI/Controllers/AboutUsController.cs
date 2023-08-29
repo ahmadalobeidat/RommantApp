@@ -2,7 +2,6 @@
 
 namespace RommanyAPI;
 
-[ApiController]
 [Route("api/[controller]")]
 public class AboutUsController : BaseController<AboutUs>
 {
